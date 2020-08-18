@@ -1,11 +1,10 @@
-<%- include '../partials/head' %>
+<%- include('../partials/head') %>
 <body>
   <h1>Skills I Have As A Developer</h1>
   <ul>
     <% skills.forEach(function(skill) { %>
       <li>
         <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
-        <%= skill.skill %>
           - 
         <%= skill.aquired %>
       </li>
