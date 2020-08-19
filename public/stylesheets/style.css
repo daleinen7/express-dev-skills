@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -6,16 +8,44 @@ body {
 
 h1 {
   color: #396884;
+  font-size: 5em;
 }
+
+h3 {
+  font-size: 3em;
+}
+
 
 a {
   color: #fff;
+  text-decoration: none;
 }
 
 a:hover {
-  color: yellow;
+  color: #ffed4f;
+  text-decoration: underline;
 }
 
 ul {
   list-style-type: none;
+  font-size: 2em;
+}
+
+.neon {
+  font-family: 'Exo 2', sans-serif;
+  color: #fff;
+  text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 1rem red,
+            0 0 2rem red,
+            0 0 3rem red,
+            0 0 5rem red,
+            0 0 6rem red,
+            0 0 7rem red,
+            0 0 8rem red,
+            0 0 9rem red,
+            0 0 10rem red,   
+            0 0 10rem red;    
+  
 }

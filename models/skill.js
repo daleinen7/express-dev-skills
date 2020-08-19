@@ -4,7 +4,9 @@ const skills = [
   {id: 3, skill: 'Can Shoot From the Hip', aquired: false},
   {id: 4, skill: 'Bourbon and Sass', aquired: 'some days'},
   {id: 5, skill: 'Remembers to Add "Defer" to script tags', aquired: false},
-  {id: 6, skill: 'Can obsess over minor details of keyboards and VS Code themes', aquired: true}
+  {id: 6, skill: 'Can make Neon CSS', aquired: true},
+  {id: 7, skill: 'Can successfully route paths', aquired: false},
+  {id: 8, skill: 'Can obsess over minor details of keyboards and VS Code themes', aquired: true}
 ];
 
 module.exports = {

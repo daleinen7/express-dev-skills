@@ -4,9 +4,17 @@
   <ul>
     <% skills.forEach(function(skill) { %>
       <li>
-        <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
+        <% if(skill.skill !== 'Can successfully route paths') { %>
+          <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
+        <% } else { %> 
+        <%=  skill.skill %>
+        <% } %>
           - 
-        <%= skill.aquired %>
+        <% if(skill.skill === 'Can make Neon CSS') {  %> 
+          <span class="neon"><%= skill.aquired %></span>
+        <% } else { %>
+          <%= skill.aquired %>
+        <% } %>
       </li>
     <% }); %>
   </ul>
