@@ -1,13 +1,14 @@
 <%- include('../partials/head') %>
 <body>
-  <h1>Skills I Have As A Developer</h1>
+  <h1>Skills I Have As A(n Impostor) Developer</h1>
+  <a href="/skills/new">Add To-Do</a>
   <ul>
     <% skills.forEach(function(skill) { %>
       <li>
-        <% if(skill.skill !== 'Can successfully route paths') { %>
+        <% if(skill.skill !== 'Can successfully route HTTP Requests') { %>
           <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
         <% } else { %> 
-        <%=  skill.skill %>
+          <span class="cant"><%= skill.skill %></span>
         <% } %>
           - 
         <% if(skill.skill === 'Can make Neon CSS') {  %> 

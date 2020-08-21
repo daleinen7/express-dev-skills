@@ -2,6 +2,11 @@
 <body>
   <h1>Skill #<%= skillNum %></h1>
   <h3><%= skill.skill %></h3>
-  <h3>Aquired: <%=skill.aquired %></h3>
+  <h3>Aquired: <%=skill.aquired %> <a href="/skills/<%= skill.id%>/edit">Edit Skill</a>
+  </h3> 
+  <form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete ... because you were never going to aquire this skill anyways</button>
+  </form>
+  <a href="/skills">back to skills</a>
 </body>
 </html>

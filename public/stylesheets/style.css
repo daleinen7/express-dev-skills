@@ -1,32 +1,53 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Indie+Flower&display=swap');
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #c2cad6;
 }
 
 h1 {
   color: #396884;
-  font-size: 5em;
+  font-size: 4em;
+  font-family: 'Alata', sans-serif;
 }
 
 h3 {
+  font-family: 'Indie Flower', cursive;
   font-size: 3em;
 }
 
 
-a {
+li > a, .cant {
+  font-family: 'Indie Flower', cursive;
   color: #fff;
   text-decoration: none;
+  font-size: 1em;
 }
 
-a:hover {
+li > a:hover, .cant:hover {
   color: #ffed4f;
   text-decoration: underline;
 }
 
+.cant {
+  cursor: pointer;
+}
+
+a {
+  font-family: 'Indie Flower', cursive;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+a:hover {
+  color: rgb(19, 20, 28);
+}
+
 ul {
+  font-family: 'Indie Flower', cursive;
   list-style-type: none;
   font-size: 2em;
 }
